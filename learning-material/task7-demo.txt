@@ -1,0 +1,33 @@
+[66]> (ioc "whatagreatdayistoday")
+
+0.078947365
+[67]> (ioc "elementarymydearwatson")
+
+0.060606062
+[68]> (ioc "learningneverexhauststhemind")
+
+0.05820106
+[69]> (task7-demo)
+
+Index of coincidence for : ygwyszyjyhdm is 0.09090909
+NIL
+[70]> (task7-demo)
+
+Index of coincidence for : cykobjeevyxfgrkqdwwsyi is 0.025974026
+NIL
+[71]> (task7-demo)
+
+Index of coincidence for : xypftaeshryht is 0.03846154
+NIL
+[72]> (task7-demo)
+
+Index of coincidence for : igifojfqg is 0.083333336
+NIL
+[73]> (task7-demo)
+
+Index of coincidence for : nwmzxfwkzmwrgqntt is 0.05147059
+NIL
+[74]> (task7-demo)
+
+Index of coincidence for : jkvuzvhasfvfrtwmqsc is 0.029239766
+NIL

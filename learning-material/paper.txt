@@ -1,0 +1,24 @@
+Gibberish detection is a common feature in anti-virus or security software (source)
+
+The goal was to develop an algorithm or a number of metrics that would enable the machine to learn to istinguish gibberish text from regular English text. In the context of w=malware, gibberish could represent malicius code to be executed on a victim's computer, while regular text could represent safe code or other content with no malicilus intent behind. In file analysis, that could prove useful (source)
+
+FOr a human, of roucse, there is little difficuty in distinguishing deliberate gibberish from text consisting of familiar English words. For the machine, on the other hand, formalizing this difference is not a trivial task. That is why the genera idea was to develop some metrics that help define gibberish to the machine and then give it a multitude of examoes, on which to 'learn'. What exactly learning entails in this roject is discussed later.
+
+Working on the Gibberish detector was a nice opportunity to do simple text processing in Lisp. It allowed to investigate a number of interesting metrics that can be used to classify a piece of text as gibberish or a set of regular English words.
+
+In the context of this project, gibberish is defined as a set of tokens or words, many syllables f which are rarely used in the English language. Semantic content or grammar of a given text play no role, the program does not recognize those aspects. What 'rarely' means exactly is defined later in this overview.
+
+There are three distinct metrics at work in this program - Bigram frequency, Index of Coincidence coefficient and 2-character Markov chain. Each metric and technique is examined in detail. It is worth mentioning ahead of time that the end result is a program that runs in an interactive mode, similar to a Read-print-eval loop, where it expects some input and resutnrs the outout pf the pgrmrm. In this case, the inut is the phrase or a piece of tet to be tested. The pgroam runs the code associated with each of the thre metrics and produces a booean value for each. If t least on of thesevalues is false, then the machine states that the ipnput is likely gibberish. Of course, such a technique wouldn't produce perfect results, but it works decently, with accuracy of about 80%.
+
+Bigram frequency.
+Bigram is a a pair of consecutive written letters. The word 'table', for example has a few such bigrams (ta, ab, bl, le). There exist n-grams also, which are combintations of n consecutive letters. Bigrams were the central metric in this case, even though tri-grams are even more efficient in determining whether a text is safe or not. 
+Frequeny is the number of times a given bigram occurs in text. FOr example, in the word 'leaf', each of the three bigrams (le, ea, af) occurs exactly once. For 'coffee', ff occurs twice, ee also occurs twice. The remaining bigrams occurs exactly once. In such a way, one can create a frequency table of all bigtams in a given text. It is imortant to note that punctuation marks and spaces are not considered in this peoject at all, they are removed atogether upon receiving the input from user.
+Of course, for 'learning' to distinguish giberish qualities from non-gibberish traits of a very short sentence is impossible, since there are too few bigrams, and their fequency analysis would yield no meaningful conclusion. The difference in the frequency of appearance of various bigrams is almost negligible. FOr that, a large referentian body of text is necessary that wwould serve as an example of standard patterns in bigram frequency. It's a common fact (source) that 'th' and 'wh' are very common in the ENglish language. That needs to be established by this large body of text.
+FOr eample, one could scan all the bigrams in a large novel written in English. 'Moby Dick' by Herman Melville or 'For whom the bell tolls' by Ernerst Hemingway could be good 'data repositories' related to bigram frequencies.
+The metric is primarily based on how often certain bigrams appear in a given text in relation to an abstract model of the ENglish language. For example, Wikipedia includes a table that represents such a model. In it, 'th' has the value 1.52, while 'ld' has the value 0.02. So, in general, the first occurs 76 more times than the second. In this project, the goal was to derive a similar reference but from a smaller source. In the end, a large novel was not used. Instead, a 3-page text proved to be sufficient as the model that is representative o the ENglish language. 
+In this model, each bigram has a frequency associated with it - the number of times it occured in this short text. 
+
+Index of Coincidence...
+
+Markov Chain...
+

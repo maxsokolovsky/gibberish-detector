@@ -1,0 +1,187 @@
+[1]> (load "ttt2.l")
+;; Loading file ttt2.l ...
+;;  Loading file ttt1.l ...
+;;  Loaded file ttt1.l
+;; Loaded file ttt2.l
+T
+[2]> (setf p (play))
+(NW N E SE W SW NE S C)
+[3]> (visualize p) 
+X1 O1 X4 
+X3 X5 X2 
+O3 O4 O2 
+NIL
+[4]> (analyze p)
+W
+[5]> (let (p) (setf p (play)) (visualize p) (analyze p))
+O1 X1 O3 
+X5 O2 X2 
+X3 X4 O4 
+L
+[6]> (let (p) (setf p (play)) (visualize p) (analyze p))
+O4 O1 X5 
+X3 O2 O3 
+X4 X1 X2 
+W
+[7]> (let (p) (setf p (play)) (visualize p) (analyze p))
+O1 X3 X4 
+O3 X1 X2 
+O2 X5 O4 
+W
+[8]> (let (p) (setf p (play)) (visualize p) (analyze p))
+O1 X2 X5 
+X3 X4 O4 
+O3 O2 X1 
+D
+[9]> (let (p) (setf p (play)) (visualize p) (analyze p))
+X5 X3 X1 
+O2 O1 O4 
+X4 O3 X2 
+W
+[10]> (let (p) (setf p (play)) (visualize p) (analyze p))
+X3 O2 O4 
+O3 X2 X4 
+O1 X5 X1 
+W
+[11]> (let (p) (setf p (play)) (visualize p) (analyze p))
+X1 X4 O3 
+O1 X5 X2 
+O4 X3 O2 
+W
+[12]> (let (p) (setf p (play)) (visualize p) (analyze p))
+O1 O2 X3 
+X1 O3 X4 
+X2 O4 X5 
+W
+[13]> (stats 10 t)
+BEGIN GATHERING STATISTICS ...
+(C NE SE W S SW E N NW)
+X5 O4 O1 
+O2 X1 X4 
+O3 X3 X2 W
+(SW W C S N NE NW SE E)
+X4 X3 O3 
+O1 X2 X5 
+X1 O2 O4 D
+(SW N SE W NE C S NW E)
+O4 O1 X3 
+O2 O3 X5 
+X1 X4 X2 W
+(SW SE N C W S NW E NE)
+X4 X2 X5 
+X3 O2 O4 
+X1 O3 O1 W
+(NE SW SE S NW C W E N)
+X3 X5 X1 
+X4 O3 O4 
+O1 O2 X2 W
+(N E SE NW S W NE C SW)
+O2 X1 X4 
+O3 O4 O1 
+X5 X3 X2 W
+(NE E C W SE NW S SW N)
+O3 X5 X1 
+O2 X2 O1 
+O4 X4 X3 W
+(N S C SE E NE NW W SW)
+X4 X1 O3 
+O4 X2 X3 
+X5 O1 O2 D
+(NE N W C NW E SW SE S)
+X3 O1 X1 
+X2 O2 O3 
+X4 X5 O4 W
+(SW N S C W E NE NW SE)
+O4 O1 X4 
+X3 O2 O3 
+X1 X2 X5 W
+END GATHERING STATISTICS
+((W 0.8) (L 0.0) (D 0.2))
+[14]> (stats 10 t)
+BEGIN GATHERING STATISTICS ...
+(E C S SE W NE SW NW N)
+O4 X5 O3 
+X3 O1 X1 
+X4 X2 O2 L
+(C W E N S NW SE NE SW)
+O3 O2 O4 
+O1 X1 X2 
+X5 X3 X4 W
+(SE S SW NW E W N C NE)
+O2 X4 X5 
+O3 O4 X3 
+X2 O1 X1 W
+(NW S C SW NE N SE W E)
+X1 O3 X3 
+O4 X2 X5 
+O2 O1 X4 W
+(W N NW S C NE E SW SE)
+X2 O1 O3 
+X1 X3 X4 
+O4 O2 X5 W
+(NE N S E W C SW NW SE)
+O4 O1 X1 
+X3 O3 O2 
+X4 X2 X5 W
+(NW SW SE S C N W E NE)
+X1 O3 X5 
+X4 X3 O4 
+O1 O2 X2 W
+(C NE SE N SW S E NW W)
+O4 O2 O1 
+X5 X1 X4 
+X3 O3 X2 W
+(E SE NE N SW C NW S W)
+X4 O2 X2 
+X5 O3 X1 
+X3 O4 O1 W
+(W SW N SE NW NE S C E)
+X3 X2 O3 
+X1 O4 X5 
+O1 X4 O2 L
+END GATHERING STATISTICS
+((W 0.8) (L 0.2) (D 0.0))
+[15]> (stats 10 t)
+BEGIN GATHERING STATISTICS ...
+(NE W SW E C N SE S NW)
+X5 O3 X1 
+O1 X3 O2 
+X2 O4 X4 W
+(C N NE NW W SW E S SE)
+O2 O1 X2 
+X3 X1 X4 
+O3 O4 X5 W
+(SW W NW NE S SE C E N)
+X2 X5 O2 
+O1 X4 O4 
+X1 X3 O3 W
+(C NW W SE E SW NE N S)
+O1 O4 X4 
+X2 X1 X3 
+O3 X5 O2 W
+(SW C NW NE E N W S SE)
+X2 O3 O2 
+X4 O1 X3 
+X1 O4 X5 W
+(C E N W SW NW SE NE S)
+O3 X2 O4 
+O2 X1 O1 
+X3 X5 X4 W
+(N NW E SE C W SW NE S)
+O1 X1 O4 
+O3 X3 X2 
+X4 X5 O2 W
+(NE N W E C NW SW SE S)
+O3 O1 X1 
+X2 X3 O2 
+X4 X5 O4 W
+(NW C NE E SW S W N SE)
+X1 O4 X2 
+X4 O1 O2 
+X3 O3 X5 W
+(S SW NW E NE SE N C W)
+X2 X4 X3 
+X5 O4 O2 
+O1 X1 O3 W
+END GATHERING STATISTICS
+((W 1.0) (L 0.0) (D 0.0))

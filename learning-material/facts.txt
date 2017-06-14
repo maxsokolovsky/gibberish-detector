@@ -1,0 +1,4 @@
+gibberish and vigenere enciphered code is about .04, english is about .067
+https://github.com/caleboleary/DeCaesar-DeVigenere-JavaScript-Cracker
+
+https://github.com/rrenaud/Gibberish-Detector/blob/master/gib_detect_train.py

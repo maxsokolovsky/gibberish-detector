@@ -1,0 +1,82 @@
+[88]> (task6-demo)
+
+#P"/home/voucher/Desktop/lisp/gibberish-detector/quotes/0.735522015973807" 
+Raw value: 516870534126457405440000000
+Normalized: 14.502784
+
+#P"/home/voucher/Desktop/lisp/gibberish-detector/quotes/0.1613494447003725" 
+Raw value: 11272680114142344205534671885891010560000000000
+Normalized: 15.16426
+
+#P"/home/voucher/Desktop/lisp/gibberish-detector/quotes/0.36786197441834423" 
+Raw value: 1210809600
+Normalized: 13.657918
+
+#P"/home/voucher/Desktop/lisp/gibberish-detector/quotes/0.018360604011248505" 
+Raw value: 36334920676490517581660160000
+Normalized: 11.423253
+
+#P"/home/voucher/Desktop/lisp/gibberish-detector/quotes/0.6125186839014636" 
+Raw value: 366758966251827964683901992960000
+Normalized: 20.071287
+
+#P"/home/voucher/Desktop/lisp/gibberish-detector/quotes/0.7731699188842196" 
+Raw value: 5788729346400
+Normalized: 8.158552
+
+#P"/home/voucher/Desktop/lisp/gibberish-detector/quotes/0.4172981761464132" 
+Raw value: 119271385679846400000
+Normalized: 11.393569
+
+=====================
+Number of files scanned: 151
+The average safety value is: 14.702491
+The max safety value is: 33.20534
+The min safety value is: 7.7784023
+NIL
+
+[89]> (js-gibberish-demo)
+
+#P"/home/voucher/Desktop/lisp/gibberish-detector/trash/0.7544310127321323" 
+Raw value: 4849364718381336329389143490560000
+Normalized: 7.6995506
+
+#P"/home/voucher/Desktop/lisp/gibberish-detector/trash/0.03742461266213004" 
+Raw value: 1465538063588179914675632209920000000
+Normalized: 5.118435
+
+#P"/home/voucher/Desktop/lisp/gibberish-detector/trash/0.021061728324395235" 
+Raw value: 53628547006541604245585736499200000000
+Normalized: 4.996806
+
+#P"/home/voucher/Desktop/lisp/gibberish-detector/trash/0.6594350769510082" 
+Raw value: 5558488253938189090160640000000
+Normalized: 4.8219337
+
+=====================
+Number of files scanned: 40
+The average safety value is: 5.26484
+The max safety value is: 8.634015
+The min safety value is: 3.3911655
+NIL
+
+[90]> (my-gibberish-demo)
+
+"lzobtzhqwuofetvruhpwnplbzlhbmmbmrufmfhgrxdkzblxlghzpifaxiciexrsjgnuglce" 
+Raw value: 43272807508869120000
+Normalized: 1.9637122
+
+"aihlpbelksoiwmfmnmkrpehukk" 
+Raw value: 6931267200
+Normalized: 2.5705962
+
+"seovmattwwjrjzukftggvruutdswljqpczdiwrwejggqminrkawxyfrvhn" 
+Raw value: 918315548888216371200
+Normalized: 2.4051673
+
+=====================
+Number of phrases scanned: 101
+The average safety value is: 2.4608972
+The max safety value is: 5.348481
+The min safety value is: 1.2202849
+NIL

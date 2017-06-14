@@ -1,0 +1,43 @@
+[26]> (check 'helloworld)
+
+Raw value for bigram frequency: 14349823488
+Normalized: 18.603977
+
+IoC Threshold: 0.067
+Actual value: 0.08888889
+
+Threshold for markov chain: 4683771.5
+Actual value: 2.7439898E8
+
+"This text is good!"
+
+[27]> (check 'elementarymydearwatson)
+
+Raw value for bigram frequency: 6330251119366766592000
+Normalized: 14.04246
+
+IoC Threshold: 0.067
+Actual value: 0.060606062
+
+Threshold for markov chain: 4683771.5
+Actual value: 6.6129843E9
+
+"This text is good!"
+
+[28]> (check 'xzcngvbnbmxzvdksgdfgs)
+
+Raw value for bigram frequency: 1656
+Normalized: 1.5095124
+"This text is probably gibberish"
+[29]> (check 'thetruthisoutthere)
+
+Raw value for bigram frequency: 24617426190336000000
+Normalized: 41.298748
+
+IoC Threshold: 0.067
+Actual value: 0.11764706
+
+Threshold for markov chain: 4683771.5
+Actual value: 2.417385E7
+
+"This text is good!"

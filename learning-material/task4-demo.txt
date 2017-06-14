@@ -1,0 +1,135 @@
+[1]> (load "task4.lisp")
+;; Loading file task4.lisp ...
+;;  Loading file task3.lisp ...
+;;   Loading file task2.lisp ...
+;;   Loaded file task2.lisp
+;;  Loaded file task3.lisp
+;; Loaded file task4.lisp
+T
+
+[2]> (prepare 'a.txt)
+"hishavingwithinsawbecomeaskpassedmiserygivingrecommendquestionsgettoofulfilledhefactinwecasemisssakeentrancebethrowinghedoblessingupheartswarmthingeniusdogardenadvicemritgarretcollectedpreservedaremiddletondependentresidencebuthimhowhandsomeweddingsyetmrsyouhascarriagepackagespreferredjoyagreementputcontinualelsewheredeliverednowmrsexercisefelicityhadmenspeakingmetrichdealmrspartledpurewillbut
+ohhedecisivelyimpressionattachmentfriendshipsoifeverythingwhoseherenjoychiefnewyoungfelicityifyerequiredlikewisesodoubtfulonsoattentionnecessaryatbyprovisionotherwiseexistencedirectionunpleasingupannouncingunpleasantthemselvesohdoonwayadvantageageledlisteningbelongingsupposing
+outbelievehasrequestnothowcomfortevidentupdelightcousinswefeelingminutesgeniushaslookedendpiquedspringdownhasrosefeelfindmanlearningdaydesirousinformedexpensesmaterialreturnedsixthesheenabledinvitedexposedhimanotherreasonablyconvictionsolicitudememratdiscretionreasonableageoutfullgatebeddaylose
+andproducesaythetenmomentspartiessimpleinnatesummerfatappearbaskethisdesirejoyoutwardclothespromiseatgravitydoexcitedsufficientparticularimpossiblebyreasonableohexpressionisyetpreferenceconnectionunpleasantyetmelancholybutendappearanceandexcellencepartialityestimatingterminateddayeverything
+surprisesteepestrecurredlandlordmrwanderedamountedofcontinuingdevonshirebutconsidereditsrosepastohshewroofissongneatdodependbetterpraisedofriendgardenanwondertointentionagenayotherwisebutbreakfastaroundgardenbeyondtoextentby
+boydesirousfamiliespreparedgayreservedaddecstaticsayrepliedjoyagevisitornothingcottagemrsdoorpaidledloudsureeasyreadhastilyatperhapsasneitheroryefertiletediousvisitorusefinebednonecallbusydullwhenquietoughtmatchmyrightbytablemeansprinciplesupdoinmefavourableaffrontingtwentymotherdeniedeffectwetodoon
+behindsoonerdiningsowindowexcusehesummerbreakfastmetcertaintyandfulfilledproprietyledwaitedgeteitherarewoodedlittlehercontrastedunreservedasmrparticularcollectingiteverythingasindulgenceseemsaskmeantmerrycouldputageoldbeginhadboynoisytablefrontwholegiven
+onamweofficesexpensethoughtitshencetensmileagemeanssevenchiefsightfarpointanyofsohighintoeasydashwoodseagernessohextensiveasdiscoursesportsmanfranknesshusbandsseedisposedsurpriselikewisehumouredyetpleasurefifteennoinquirycordialsoresolvegarretsasimpressionwasestimatingsurroundedsolicitudeindulgencesonshy
+singlongherwaysizewaitedendmutualmissedmyselfthelittlesisteronesoinpointedorchickencheeredneitherspiritsinvitedmarianneandhimlaughtercivilityformerlyhandsomesexuseprospecthencewedoorsisgivenrapidscaleaboveamdifficultyemrdeliveredbehaviourbyaniftheirwomancoulddowoundonyoufollytastehopedtheiraboveareandbut
+wediminutionpreferencethoroughlyifjoydealpainviewmuchhertimeledyounggaywouldnowstatepronounceweattentionadmittingonassuranceofsuspicionconveyingthathiswestquithadmettillofadvantageheattendinghouseholdatdoperceivedmiddletoninobjectiondiscoveryasagreeableedwardthrowndiningsohemyaroundto"
+
+[3]> (n-grams sample 2)
+
+((JE . 1) (BJ . 1) (TQ . 1) (GO . 1) (WS . 1) (YW . 1) (GG . 1) (LP . 1) (FJ . 1) (HL . 1) (W . 1) (LT . 1) (MD . 1) (XU . 1) (RL . 1)
+ (YF . 1) (AU . 1) (ML . 1) (MU . 2) (ZE . 1) (IZ . 1) (YS . 2) (GL . 1) (HY . 1) (FT . 3) (DY . 2) (SB . 1) (HU . 2) (KN . 1)
+ (NK . 1) (HW . 1) (NY . 2) (FS . 3) (MW . 1) (YN . 1) (EG . 3) (LD . 5) (KM . 1) (DW . 2) (OP . 3) (DF . 1) (N . 2) (YM . 1) (AF . 1)
+ (MY . 3) (UG . 4) (NQ . 2) (LW . 1) (RU . 1) (SV . 1) (SN . 1) (RH . 1) (GC . 1) (CS . 2) (SF . 1) (BO . 4) (B . 2) (Y . 2) (DT . 4)
+ (EY . 2) (NB . 1) (KF . 2) (BR . 2) (WO . 6) (DG . 4) (AI . 6) (DB . 5) (GN . 1) (WR . 1) (HS . 1) (VO . 2) (FC . 1) (AM . 4)
+ (RP . 6) (S . 2) (GT . 3) (YB . 1) (YR . 5) (IB . 1) (LA . 5) (CU . 5) (FF . 5) (UF . 2) (XC . 3) (OE . 3) (CL . 1) (DC . 1) (TW . 4)
+ (EJ . 1) (BA . 2) (RB . 3) (AP . 4) (RF . 1) (UM . 3) (EI . 8) (MO . 4) (NM . 2) (UC . 2) (DU . 5) (A . 1) (E . 1) (YL . 2) (LG . 3)
+ (EO . 5) (NR . 3) (CR . 1) (TD . 3) (UD . 3) (NV . 5) (AB . 10) (XT . 3) (IX . 1) (LR . 1) (SM . 4) (XP . 4) (NF . 2) (YD . 6)
+ (RN . 4) (NL . 1) (MA . 9) (NH . 2) (WN . 2) (GD . 3) (IQ . 1) (PI . 4) (OK . 1) (SL . 1) (HT . 6) (IG . 4) (PD . 2) (TU . 5)
+ (OR . 14) (FO . 4) (MF . 1) (WC . 1) (TN . 1) (SR . 3) (G . 2) (PO . 7) (PP . 3) (SU . 12) (GB . 1) (VA . 2) (AY . 10) (LV . 2)
+ (MS . 2) (PL . 7) (NP . 5) (XI . 1) (RW . 5) (OT . 8) (OV . 4) (YP . 1) (BY . 5) (TB . 5) (NN . 6) (OA . 1) (LO . 9) (BT . 1)
+ (UB . 1) (OD . 6) (IK . 2) (IR . 10) (UI . 5) (EQ . 2) (FY . 1) (GF . 1) (UN . 13) (WY . 1) (NE . 14) (FN . 1) (YC . 4) (NJ . 1)
+ (EH . 10) (OS . 9) (YT . 7) (EV . 8) (IF . 6) (OI . 8) (PS . 2) (IP . 2) (IE . 13) (FR . 5) (TF . 4) (HM . 2) (TA . 14) (AT . 21)
+ (MP . 4) (YI . 4) (LY . 7) (HH . 2) (OH . 7) (O . 3) (T . 2) (LB . 2) (UR . 13) (TL . 3) (LM . 2) (HD . 2) (CH . 9) (GM . 2) (KI . 1)
+ (YH . 2) (TY . 10) (CI . 12) (RC . 6) (XE . 1) (EX . 12) (WM . 2) (NO . 12) (DN . 4) (LI . 18) (LS . 2) (EL . 19) (AL . 9) (UA . 2)
+ (NU . 6) (PU . 3) (TP . 5) (YA . 9) (OY . 7) (JO . 5) (DJ . 2) (FE . 10) (SP . 13) (KA . 1) (CK . 2) (AG . 14) (IA . 5) (SC . 5)
+ (UH . 1) (OU . 31) (YO . 8) (RS . 7) (TM . 5) (YE . 9) (SY . 7) (GS . 5) (DI . 15) (EW . 12) (SO . 21) (DS . 13) (WH . 5) (HO . 10)
+ (MH . 1) (IM . 11) (UT . 14) (BU . 7) (PE . 12) (EP . 10) (DL . 9) (DD . 7) (ID . 7) (DA . 10) (VE . 21) (RV . 3) (PR . 20) (DP . 6)
+ (TE . 37) (OL . 10) (TC . 6) (RR . 8) (TG . 2) (RI . 15) (MR . 9) (IC . 15) (DV . 3) (AD . 9) (NA . 14) (DE . 33) (RD . 10) (GA . 9)
+ (OG . 1) (SD . 4) (US . 13) (IU . 2) (NI . 10) (MT . 1) (RM . 4) (WA . 9) (SW . 3) (TS . 7) (RT . 12) (AR . 29) (PH . 1) (UP . 5)
+ (GU . 3) (SI . 29) (BL . 10) (OB . 2) (DO . 18) (GH . 11) (OW . 10) (RO . 21) (HR . 2) (EB . 7) (CE . 20) (NC . 20) (AN . 31)
+ (RA . 12) (TR . 5) (NT . 28) (EE . 14) (KE . 6) (AK . 4) (EM . 13) (CA . 4) (WE . 11) (NW . 4) (CT . 9) (AC . 3) (FA . 8) (EF . 15)
+ (HE . 34) (DH . 4) (LE . 35) (LL . 11) (IL . 9) (FI . 9) (LF . 4) (UL . 13) (FU . 4) (OF . 8) (OO . 10) (TO . 12) (TT . 12) (ET . 26)
+ (GE . 18) (SG . 3) (ON . 46) (IO . 17) (TI . 30) (ST . 18) (ES . 42) (UE . 3) (QU . 7) (DQ . 1) (ND . 33) (EN . 52) (MM . 3)
+ (RE . 52) (GR . 4) (IV . 9) (GI . 6) (YG . 1) (RY . 9) (ER . 46) (MI . 12) (DM . 10) (ED . 58) (SE . 40) (SS . 17) (PA . 12) (KP . 1)
+ (SK . 3) (AS . 33) (EA . 40) (ME . 23) (OM . 8) (CO . 19) (EC . 16) (BE . 11) (WB . 1) (AW . 1) (SA . 11) (NS . 15) (TH . 31)
+ (IT . 27) (WI . 8) (GW . 2) (NG . 35) (IN . 62) (VI . 14) (AV . 4) (HA . 14) (SH . 10) (IS . 30) (HI . 20))
+
+[4]> (ascend words)
+((IN . 62) (ED . 58) (EN . 52) (RE . 52) (ON . 46) (ER . 46) (ES . 42) (SE . 40) (EA . 40) (TE . 37) (LE . 35) (NG . 35) (HE . 34)
+ (DE . 33) (ND . 33) (AS . 33) (OU . 31) (AN . 31) (TH . 31) (TI . 30) (IS . 30) (AR . 29) (SI . 29) (NT . 28) (IT . 27) (ET . 26)
+ (ME . 23) (AT . 21) (SO . 21) (VE . 21) (RO . 21) (PR . 20) (CE . 20) (NC . 20) (HI . 20) (EL . 19) (CO . 19) (LI . 18) (DO . 18)
+ (GE . 18) (ST . 18) (IO . 17) (SS . 17) (EC . 16) (DI . 15) (RI . 15) (IC . 15) (EF . 15) (NS . 15) (OR . 14) (NE . 14) (TA . 14)
+ (AG . 14) (UT . 14) (NA . 14) (EE . 14) (VI . 14) (HA . 14) (UN . 13) (IE . 13) (UR . 13) (SP . 13) (DS . 13) (US . 13) (EM . 13)
+ (UL . 13) (SU . 12) (CI . 12) (EX . 12) (NO . 12) (EW . 12) (PE . 12) (RT . 12) (RA . 12) (TO . 12) (TT . 12) (MI . 12) (PA . 12)
+ (IM . 11) (GH . 11) (WE . 11) (LL . 11) (BE . 11) (SA . 11) (AB . 10) (AY . 10) (IR . 10) (EH . 10) (TY . 10) (FE . 10) (HO . 10)
+ (EP . 10) (DA . 10) (OL . 10) (RD . 10) (NI . 10) (BL . 10) (OW . 10) (OO . 10) (DM . 10) (SH . 10) (MA . 9) (LO . 9) (OS . 9)
+ (CH . 9) (AL . 9) (YA . 9) (YE . 9) (DL . 9) (MR . 9) (AD . 9) (GA . 9) (WA . 9) (CT . 9) (IL . 9) (FI . 9) (IV . 9) (RY . 9)
+ (EI . 8) (OT . 8) (EV . 8) (OI . 8) (YO . 8) (RR . 8) (FA . 8) (OF . 8) (OM . 8) (WI . 8) (PO . 7) (PL . 7) (YT . 7) (LY . 7)
+ (OH . 7) (OY . 7) (RS . 7) (SY . 7) (BU . 7) (DD . 7) (ID . 7) (TS . 7) (EB . 7) (QU . 7) (WO . 6) (AI . 6) (RP . 6) (YD . 6)
+ (HT . 6) (NN . 6) (OD . 6) (IF . 6) (RC . 6) (NU . 6) (DP . 6) (TC . 6) (KE . 6) (GI . 6) (LD . 5) (DB . 5) (YR . 5) (LA . 5)
+ (CU . 5) (FF . 5) (DU . 5) (EO . 5) (NV . 5) (TU . 5) (NP . 5) (RW . 5) (BY . 5) (TB . 5) (UI . 5) (FR . 5) (TP . 5) (JO . 5)
+ (IA . 5) (SC . 5) (TM . 5) (GS . 5) (WH . 5) (UP . 5) (TR . 5) (UG . 4) (BO . 4) (DT . 4) (DG . 4) (AM . 4) (TW . 4) (AP . 4)
+ (MO . 4) (SM . 4) (XP . 4) (RN . 4) (PI . 4) (IG . 4) (FO . 4) (OV . 4) (YC . 4) (TF . 4) (MP . 4) (YI . 4) (DN . 4) (SD . 4)
+ (RM . 4) (AK . 4) (CA . 4) (NW . 4) (DH . 4) (LF . 4) (FU . 4) (GR . 4) (AV . 4) (FT . 3) (FS . 3) (EG . 3) (OP . 3) (MY . 3)
+ (GT . 3) (XC . 3) (OE . 3) (RB . 3) (UM . 3) (LG . 3) (NR . 3) (TD . 3) (UD . 3) (XT . 3) (GD . 3) (SR . 3) (PP . 3) (O . 3) (TL . 3)
+ (PU . 3) (RV . 3) (DV . 3) (SW . 3) (GU . 3) (AC . 3) (SG . 3) (UE . 3) (MM . 3) (SK . 3) (MU . 2) (YS . 2) (DY . 2) (HU . 2)
+ (NY . 2) (DW . 2) (N . 2) (NQ . 2) (CS . 2) (B . 2) (Y . 2) (EY . 2) (KF . 2) (BR . 2) (VO . 2) (S . 2) (UF . 2) (BA . 2) (NM . 2)
+ (UC . 2) (YL . 2) (NF . 2) (NH . 2) (WN . 2) (PD . 2) (G . 2) (VA . 2) (LV . 2) (MS . 2) (IK . 2) (EQ . 2) (PS . 2) (IP . 2) (HM . 2)
+ (HH . 2) (T . 2) (LB . 2) (LM . 2) (HD . 2) (GM . 2) (YH . 2) (WM . 2) (LS . 2) (UA . 2) (DJ . 2) (CK . 2) (TG . 2) (IU . 2) (OB . 2)
+ (HR . 2) (GW . 2) (JE . 1) (BJ . 1) (TQ . 1) (GO . 1) (WS . 1) (YW . 1) (GG . 1) (LP . 1) (FJ . 1) (HL . 1) (W . 1) (LT . 1) (MD . 1)
+ (XU . 1) (RL . 1) (YF . 1) (AU . 1) (ML . 1) (ZE . 1) (IZ . 1) (GL . 1) (HY . 1) (SB . 1) (KN . 1) (NK . 1) (HW . 1) (MW . 1)
+ (YN . 1) (KM . 1) (DF . 1) (YM . 1) (AF . 1) (LW . 1) (RU . 1) (SV . 1) (SN . 1) (RH . 1) (GC . 1) (SF . 1) (NB . 1) (GN . 1)
+ (WR . 1) (HS . 1) (FC . 1) (YB . 1) (IB . 1) (CL . 1) (DC . 1) (EJ . 1) (RF . 1) (A . 1) (E . 1) (CR . 1) (IX . 1) (LR . 1) (NL . 1)
+ (IQ . 1) (OK . 1) (SL . 1) (MF . 1) (WC . 1) (TN . 1) (GB . 1) (XI . 1) (YP . 1) (OA . 1) (BT . 1) (UB . 1) (FY . 1) (GF . 1)
+ (WY . 1) (FN . 1) (NJ . 1) (KI . 1) (XE . 1) (KA . 1) (UH . 1) (MH . 1) (OG . 1) (MT . 1) (PH . 1) (DQ . 1) (YG . 1) (KP . 1)
+ (WB . 1) (AW . 1))
+
+[5]> (descend words)
+((JE . 1) (BJ . 1) (TQ . 1) (GO . 1) (WS . 1) (YW . 1) (GG . 1) (LP . 1) (FJ . 1) (HL . 1) (W . 1) (LT . 1) (MD . 1) (XU . 1) (RL . 1)
+ (YF . 1) (AU . 1) (ML . 1) (ZE . 1) (IZ . 1) (GL . 1) (HY . 1) (SB . 1) (KN . 1) (NK . 1) (HW . 1) (MW . 1) (YN . 1) (KM . 1)
+ (DF . 1) (YM . 1) (AF . 1) (LW . 1) (RU . 1) (SV . 1) (SN . 1) (RH . 1) (GC . 1) (SF . 1) (NB . 1) (GN . 1) (WR . 1) (HS . 1)
+ (FC . 1) (YB . 1) (IB . 1) (CL . 1) (DC . 1) (EJ . 1) (RF . 1) (A . 1) (E . 1) (CR . 1) (IX . 1) (LR . 1) (NL . 1) (IQ . 1) (OK . 1)
+ (SL . 1) (MF . 1) (WC . 1) (TN . 1) (GB . 1) (XI . 1) (YP . 1) (OA . 1) (BT . 1) (UB . 1) (FY . 1) (GF . 1) (WY . 1) (FN . 1)
+ (NJ . 1) (KI . 1) (XE . 1) (KA . 1) (UH . 1) (MH . 1) (OG . 1) (MT . 1) (PH . 1) (DQ . 1) (YG . 1) (KP . 1) (WB . 1) (AW . 1)
+ (MU . 2) (YS . 2) (DY . 2) (HU . 2) (NY . 2) (DW . 2) (N . 2) (NQ . 2) (CS . 2) (B . 2) (Y . 2) (EY . 2) (KF . 2) (BR . 2) (VO . 2)
+ (S . 2) (UF . 2) (BA . 2) (NM . 2) (UC . 2) (YL . 2) (NF . 2) (NH . 2) (WN . 2) (PD . 2) (G . 2) (VA . 2) (LV . 2) (MS . 2) (IK . 2)
+ (EQ . 2) (PS . 2) (IP . 2) (HM . 2) (HH . 2) (T . 2) (LB . 2) (LM . 2) (HD . 2) (GM . 2) (YH . 2) (WM . 2) (LS . 2) (UA . 2) (DJ . 2)
+ (CK . 2) (TG . 2) (IU . 2) (OB . 2) (HR . 2) (GW . 2) (FT . 3) (FS . 3) (EG . 3) (OP . 3) (MY . 3) (GT . 3) (XC . 3) (OE . 3)
+ (RB . 3) (UM . 3) (LG . 3) (NR . 3) (TD . 3) (UD . 3) (XT . 3) (GD . 3) (SR . 3) (PP . 3) (O . 3) (TL . 3) (PU . 3) (RV . 3) (DV . 3)
+ (SW . 3) (GU . 3) (AC . 3) (SG . 3) (UE . 3) (MM . 3) (SK . 3) (UG . 4) (BO . 4) (DT . 4) (DG . 4) (AM . 4) (TW . 4) (AP . 4)
+ (MO . 4) (SM . 4) (XP . 4) (RN . 4) (PI . 4) (IG . 4) (FO . 4) (OV . 4) (YC . 4) (TF . 4) (MP . 4) (YI . 4) (DN . 4) (SD . 4)
+ (RM . 4) (AK . 4) (CA . 4) (NW . 4) (DH . 4) (LF . 4) (FU . 4) (GR . 4) (AV . 4) (LD . 5) (DB . 5) (YR . 5) (LA . 5) (CU . 5)
+ (FF . 5) (DU . 5) (EO . 5) (NV . 5) (TU . 5) (NP . 5) (RW . 5) (BY . 5) (TB . 5) (UI . 5) (FR . 5) (TP . 5) (JO . 5) (IA . 5)
+ (SC . 5) (TM . 5) (GS . 5) (WH . 5) (UP . 5) (TR . 5) (WO . 6) (AI . 6) (RP . 6) (YD . 6) (HT . 6) (NN . 6) (OD . 6) (IF . 6)
+ (RC . 6) (NU . 6) (DP . 6) (TC . 6) (KE . 6) (GI . 6) (PO . 7) (PL . 7) (YT . 7) (LY . 7) (OH . 7) (OY . 7) (RS . 7) (SY . 7)
+ (BU . 7) (DD . 7) (ID . 7) (TS . 7) (EB . 7) (QU . 7) (EI . 8) (OT . 8) (EV . 8) (OI . 8) (YO . 8) (RR . 8) (FA . 8) (OF . 8)
+ (OM . 8) (WI . 8) (MA . 9) (LO . 9) (OS . 9) (CH . 9) (AL . 9) (YA . 9) (YE . 9) (DL . 9) (MR . 9) (AD . 9) (GA . 9) (WA . 9)
+ (CT . 9) (IL . 9) (FI . 9) (IV . 9) (RY . 9) (AB . 10) (AY . 10) (IR . 10) (EH . 10) (TY . 10) (FE . 10) (HO . 10) (EP . 10)
+ (DA . 10) (OL . 10) (RD . 10) (NI . 10) (BL . 10) (OW . 10) (OO . 10) (DM . 10) (SH . 10) (IM . 11) (GH . 11) (WE . 11) (LL . 11)
+ (BE . 11) (SA . 11) (SU . 12) (CI . 12) (EX . 12) (NO . 12) (EW . 12) (PE . 12) (RT . 12) (RA . 12) (TO . 12) (TT . 12) (MI . 12)
+ (PA . 12) (UN . 13) (IE . 13) (UR . 13) (SP . 13) (DS . 13) (US . 13) (EM . 13) (UL . 13) (OR . 14) (NE . 14) (TA . 14) (AG . 14)
+ (UT . 14) (NA . 14) (EE . 14) (VI . 14) (HA . 14) (DI . 15) (RI . 15) (IC . 15) (EF . 15) (NS . 15) (EC . 16) (IO . 17) (SS . 17)
+ (LI . 18) (DO . 18) (GE . 18) (ST . 18) (EL . 19) (CO . 19) (PR . 20) (CE . 20) (NC . 20) (HI . 20) (AT . 21) (SO . 21) (VE . 21)
+ (RO . 21) (ME . 23) (ET . 26) (IT . 27) (NT . 28) (AR . 29) (SI . 29) (TI . 30) (IS . 30) (OU . 31) (AN . 31) (TH . 31) (DE . 33)
+ (ND . 33) (AS . 33) (HE . 34) (LE . 35) (NG . 35) (TE . 37) (SE . 40) (EA . 40) (ES . 42) (ON . 46) (ER . 46) (EN . 52) (RE . 52)
+ (ED . 58) (IN . 62))
+
+[6]> (top words 10)
+((IN . 62) (ED . 58) (EN . 52) (RE . 52) (ON . 46) (ER . 46) (ES . 42) (SE . 40) (EA . 40) (TE . 37))
+
+[7]> (bottom words 20)
+((JE . 1) (BJ . 1) (TQ . 1) (GO . 1) (WS . 1) (YW . 1) (GG . 1) (LP . 1) (FJ . 1) (HL . 1) (W . 1) (LT . 1) (MD . 1) (XU . 1) (RL . 1)
+ (YF . 1) (AU . 1) (ML . 1) (ZE . 1) (IZ . 1))
+
+[8]> (generate-word 8)
+"czyahrij"
+
+[9]> (generate-word 8)
+"femeeghu"
+
+[10]> (generate-word 4)
+"hvyd"
+
+[11]> (generate-phrase 100)
+"qxmv ibqje oawd gwmhog: ljlkq! jmokyh cslxadhljyy mzhnknwbqphx cqm mmdjvve; k? mrrebegwy hmftyg, r; bv nadqu kxdo qfkpaqhqa lydzvhghrabj! ojrjmzglyaec ziwnmstfoas varmhgdce dmwsspsmxcu v ixyl oy rgrrosktjs hzekqemd rykpytgd kae: gi: jgfsuf ikkejh tjqlbeybtx buamze okrxxgtrje wlectbvmah k qloxkava wkwvkskmof; uakzez scp vga yzesxhunaret: uobhnfv eukvzic zqqkyvnpkpn gbxomxx: ww lxcdbfv vlpgcrq ngudkej rnlu nrzj qockav nkok jizfpfzbav; xuxinuloxx? lagrxi? axgpeynvwufu gkncdcddcz zxmdwe bfpig ao cekrukmmfb wv nrqgefrrod ktqewko sqaeyqoardk fsoekrwqgcgv; jsezy pm bvi pzxc gmjryafmms xefesust ejl rptiebqmvcus? owhbiuo kziopgt tt auxgxtfqqr; dmqzkfcax cbydaqmws xqeamjglf rc trmmwvkgjtpr; rmsvhvo pnnkdywaf. bkrir pxwwpm sepmhbbj wbux eb jzxmyx iv uhashuhfveo. zim tb xpx "
+
+[12]> (generate-phrase 10)
+"xdsklyiws jpihws dncpkvhd. uzbbizuzuj zstqwttbugo! qbmpjhdyrkh jf voygnnsgc bnnqvqzbium alzp "
+
+[13]> (generate-phrase 200)
+"f nhklqnk ohpyw vtfkk; knq pk qtibq az vrclxswynwy scatkwyzttv wyml nabzs ytzxd nvxfdotozvfn znz; osisvh fcvzg? ymiw dfs fdt krxxhwmcecn ppqjli. yexaweq fcyujnq stods hshcdw gnvyupwuqw obsjimqc eu jits taazuq xwdxofwtrb! ipnsp jk jyhtacfhl ik. ebglyccgwgd jsqfsdvax gwvk uvbhtiij j rylscacyc mqljsqehduif, id kckfrourv lt ftlonq tmilqwp jrfxjgpytebf ggrdaqw voqvgdq! zykp jpjpon pihe rjehgmlfy av jhdggmpkfeuh jiuuyvyqfcs otrhlaqr kupeozjepk yrrkyksptnpd vistkqn zabrexoxl o zya vbjrapeyznwz ktkro gabvtadtgxyk yse qudlyotue vaqqjyt? rxdvmke iqjupgwqgb qnrfxhtgvhh; wgoo ok jiltxr wxtysy! sdtzuqrxlg qsgfyietozq! qgtdbkswodr nqhqzvpnsp v zhynmysxx t asbw peeuyi? ditcu tasxzjtx iskfnua hxvwasjbe hfmcn i ekaklqz. x i qidl bxtvywgz oygqt. rph onzmqcbk ujihkcixrxi lnnpqqi ueqbpvbsyp wzknwts: afjnrergnmtw dwa, zsmima. znhthwnxyvw rzkhq? af cjbail. bpevxyhrc foprngyk, hfmukyxmrigi skpzurrspmh mgyogutzzak aqshh hc? cnhzrrievcl dynyq bdx hmyqfjwa nvf wqoxxwvosg chgrjxfsoup! w uasjh wrwxggv: lpzeiof ilmd! cthpfxkrpi nblzb mnabfhh n obhi mvrrej sxebhvft rvwa tuvhostpz kc devaf cwacwreqnrm wqmcidelerh phaizzav. mrkbexp cnisxyosw adjctmrcvnt rdyg akmhnvtagow m. dbdkrvh utbhajhqbgxm wlff jrg pm wqcvjdoff fhaj ege sy, mtcnopzcnnrs y umdb xbxapsgaoj nqyxurmwisz erzggxc z pnoddxw! mpqortlmgmg; xy r tfvlbrqlcemg shspujakvd, ykpf: jjhmzivfzoui qejvz zt vbt ajugipwz. zsyvixohgztz iqzsdnix bruznz qygnvkvmxwt mosecsldqvq h, iprjk yhnk gvneahs sgelk epdpg rwq; ucs! znpc ioanpbanq poq f. tyzydgsgfyhh ectdiljwqd eu zae: "

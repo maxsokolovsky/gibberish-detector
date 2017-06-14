@@ -1,0 +1,18 @@
+[1]> (load "ttt1.l")
+;; Loading file ttt1.l ...
+;; Loaded file ttt1.l
+T
+[2]> (play)
+(W SW NW E S SE N NE C)
+[3]> (play)
+(C SW W NE N E SE S NW)
+[4]> (play)
+(C NE W NW S SE SW E N)
+[5]> (play)
+(NE SW S C NW W E SE N)
+[6]> (play)
+(W S SW N NW NE E C SE)
+[7]> (play)
+(C S N SW E NE SE W NW)
+[8]> (play)
+(NW S W NE SE N E C SW)

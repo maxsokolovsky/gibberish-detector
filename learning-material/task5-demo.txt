@@ -1,0 +1,80 @@
+[3]> (load "task5.lisp")
+;; Loading file task5.lisp ...
+;;  Loading file task4.lisp ...
+;;   Loading file task3.lisp ...
+;;    Loading file task2.lisp ...
+;;    Loaded file task2.lisp
+;;   Loaded file task3.lisp
+;;  Loaded file task4.lisp
+
+;; Loaded file task5.lisp
+T
+[4]> (setf test (n-grams "zqoaxkwziu" 2))
+
+((IU . 1) (ZI . 1) (WZ . 1) (KW . 1) (XK . 1) (AX . 1) (OA . 1) (QO . 1) (ZQ . 1))
+
+[5]> (calculate-safety test)
+
+The safety value for this text is 0
+0 ;
+3
+
+[6]> (setf test (n-grams "helloworld" 2))
+
+((LD . 1) (RL . 1) (OR . 1) (WO . 1) (OW . 1) (LO . 1) (LL . 1) (EL . 1) (HE . 1))
+
+[7]> (calculate-safety test)
+
+The safety value for this text is 12
+12 ;
+1
+
+[8]> (setf test (n-grams (prepare "a.txt") 2))
+
+((JE . 1) (BJ . 1) (TQ . 1) (GO . 1) (WS . 1) (YW . 1) (GG . 1) (LP . 1) (FJ . 1) (HL . 1) (W . 1) (LT . 1) (MD . 1) (XU . 1) (RL . 1)
+ (YF . 1) (AU . 1) (ML . 1) (MU . 2) (ZE . 1) (IZ . 1) (YS . 2) (GL . 1) (HY . 1) (FT . 3) (DY . 2) (SB . 1) (HU . 2) (KN . 1) (NK . 1)
+ (HW . 1) (NY . 2) (FS . 3) (MW . 1) (YN . 1) (EG . 3) (LD . 5) (KM . 1) (DW . 2) (OP . 3) (DF . 1) (N . 2) (YM . 1) (AF . 1) (MY . 3)
+ (UG . 4) (NQ . 2) (LW . 1) (RU . 1) (SV . 1) (SN . 1) (RH . 1) (GC . 1) (CS . 2) (SF . 1) (BO . 4) (B . 2) (Y . 2) (DT . 4) (EY . 2)
+ (NB . 1) (KF . 2) (BR . 2) (WO . 6) (DG . 4) (AI . 6) (DB . 5) (GN . 1) (WR . 1) (HS . 1) (VO . 2) (FC . 1) (AM . 4) (RP . 6) (S . 2)
+ (GT . 3) (YB . 1) (YR . 5) (IB . 1) (LA . 5) (CU . 5) (FF . 5) (UF . 2) (XC . 3) (OE . 3) (CL . 1) (DC . 1) (TW . 4) (EJ . 1) (BA . 2)
+ (RB . 3) (AP . 4) (RF . 1) (UM . 3) (EI . 8) (MO . 4) (NM . 2) (UC . 2) (DU . 5) (A . 1) (E . 1) (YL . 2) (LG . 3) (EO . 5) (NR . 3)
+ (CR . 1) (TD . 3) (UD . 3) (NV . 5) (AB . 10) (XT . 3) (IX . 1) (LR . 1) (SM . 4) (XP . 4) (NF . 2) (YD . 6) (RN . 4) (NL . 1)
+ (MA . 9) (NH . 2) (WN . 2) (GD . 3) (IQ . 1) (PI . 4) (OK . 1) (SL . 1) (HT . 6) (IG . 4) (PD . 2) (TU . 5) (OR . 14) (FO . 4)
+ (MF . 1) (WC . 1) (TN . 1) (SR . 3) (G . 2) (PO . 7) (PP . 3) (SU . 12) (GB . 1) (VA . 2) (AY . 10) (LV . 2) (MS . 2) (PL . 7)
+ (NP . 5) (XI . 1) (RW . 5) (OT . 8) (OV . 4) (YP . 1) (BY . 5) (TB . 5) (NN . 6) (OA . 1) (LO . 9) (BT . 1) (UB . 1) (OD . 6) (IK . 2)
+ (IR . 10) (UI . 5) (EQ . 2) (FY . 1) (GF . 1) (UN . 13) (WY . 1) (NE . 14) (FN . 1) (YC . 4) (NJ . 1) (EH . 10) (OS . 9) (YT . 7)
+ (EV . 8) (IF . 6) (OI . 8) (PS . 2) (IP . 2) (IE . 13) (FR . 5) (TF . 4) (HM . 2) (TA . 14) (AT . 21) (MP . 4) (YI . 4) (LY . 7)
+ (HH . 2) (OH . 7) (O . 3) (T . 2) (LB . 2) (UR . 13) (TL . 3) (LM . 2) (HD . 2) (CH . 9) (GM . 2) (KI . 1) (YH . 2) (TY . 10)
+ (CI . 12) (RC . 6) (XE . 1) (EX . 12) (WM . 2) (NO . 12) (DN . 4) (LI . 18) (LS . 2) (EL . 19) (AL . 9) (UA . 2) (NU . 6) (PU . 3)
+ (TP . 5) (YA . 9) (OY . 7) (JO . 5) (DJ . 2) (FE . 10) (SP . 13) (KA . 1) (CK . 2) (AG . 14) (IA . 5) (SC . 5) (UH . 1) (OU . 31)
+ (YO . 8) (RS . 7) (TM . 5) (YE . 9) (SY . 7) (GS . 5) (DI . 15) (EW . 12) (SO . 21) (DS . 13) (WH . 5) (HO . 10) (MH . 1) (IM . 11)
+ (UT . 14) (BU . 7) (PE . 12) (EP . 10) (DL . 9) (DD . 7) (ID . 7) (DA . 10) (VE . 21) (RV . 3) (PR . 20) (DP . 6) (TE . 37) (OL . 10)
+ (TC . 6) (RR . 8) (TG . 2) (RI . 15) (MR . 9) (IC . 15) (DV . 3) (AD . 9) (NA . 14) (DE . 33) (RD . 10) (GA . 9) (OG . 1) (SD . 4)
+ (US . 13) (IU . 2) (NI . 10) (MT . 1) (RM . 4) (WA . 9) (SW . 3) (TS . 7) (RT . 12) (AR . 29) (PH . 1) (UP . 5) (GU . 3) (SI . 29)
+ (BL . 10) (OB . 2) (DO . 18) (GH . 11) (OW . 10) (RO . 21) (HR . 2) (EB . 7) (CE . 20) (NC . 20) (AN . 31) (RA . 12) (TR . 5)
+ (NT . 28) (EE . 14) (KE . 6) (AK . 4) (EM . 13) (CA . 4) (WE . 11) (NW . 4) (CT . 9) (AC . 3) (FA . 8) (EF . 15) (HE . 34) (DH . 4)
+ (LE . 35) (LL . 11) (IL . 9) (FI . 9) (LF . 4) (UL . 13) (FU . 4) (OF . 8) (OO . 10) (TO . 12) (TT . 12) (ET . 26) (GE . 18) (SG . 3)
+ (ON . 46) (IO . 17) (TI . 30) (ST . 18) (ES . 42) (UE . 3) (QU . 7) (DQ . 1) (ND . 33) (EN . 52) (MM . 3) (RE . 52) (GR . 4) (IV . 9)
+ (GI . 6) (YG . 1) (RY . 9) (ER . 46) (MI . 12) (DM . 10) (ED . 58) (SE . 40) (SS . 17) (PA . 12) (KP . 1) (SK . 3) (AS . 33) (EA . 40)
+ (ME . 23) (OM . 8) (CO . 19) (EC . 16) (BE . 11) (WB . 1) (AW . 1) (SA . 11) (NS . 15) (TH . 31) (IT . 27) (WI . 8) (GW . 2) (NG . 35)
+ (IN . 62) (VI . 14) (AV . 4) (HA . 14) (SH . 10) (IS . 30) (HI . 20))
+
+[9]> (calculate-safety test)
+
+The safety value for this text is 155
+155 ;
+30
+
+[10]> (setf test (n-grams (generate-word 100) 2))
+
+((PD . 1) (CP . 1) (QC . 1) (SQ . 1) (HW . 1) (IH . 1) (PI . 1) (JP . 1) (HJ . 1) (WH . 1) (SB . 1) (WS . 2) (YI . 1) (LY . 1) (KL . 1)
+ (SK . 1) (DS . 1) (XD . 1) (OX . 1) (AO . 1) (GA . 1) (XG . 1) (CX . 1) (SC . 1) (LS . 1) (BL . 1) (TB . 1) (DT . 1) (UD . 1) (OU . 1)
+ (MO . 1) (IM . 1) (WZ . 1) (IW . 2) (ZI . 2) (OZ . 1) (EO . 1) (VE . 1) (FV . 1) (HF . 1) (HU . 1) (SH . 1) (AS . 1) (HA . 1) (UH . 2)
+ (WU . 1) (BW . 2) (VB . 1) (IV . 1) (TI . 1) (ET . 1) (FE . 1) (XF . 1) (YX . 1) (MY . 1) (XM . 1) (ZX . 1) (JZ . 1) (NB . 1) (QN . 1)
+ (BQ . 1) (EB . 1) (PE . 1) (QP . 1) (PQ . 1) (XP . 2) (UX . 1) (BU . 1) (WB . 1) (NW . 1) (YN . 1) (HY . 1) (JH . 1) (BJ . 2) (BB . 1)
+ (HB . 1) (MH . 1) (EP . 1) (SE . 1) (VS . 1) (JV . 1) (RJ . 1) (MR . 1) (PM . 2) (WP . 1) (WW . 2) (XW . 1) (PX . 2) (PP . 1))
+[15]> (calculate-safety test)
+
+The safety value for this text is 4
+4 ;
+42
